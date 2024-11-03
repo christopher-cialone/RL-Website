@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Beaker } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/components/ui/button"
 
 export default function AboutPage() {
   return (
@@ -58,9 +58,8 @@ export default function AboutPage() {
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8">Our Team</h2>
             <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-              <TeamMember name="Dr. Elena Rosalone" role="Founder & CEO" />
-              <TeamMember name="Marcus Chen" role="Lead Developer" />
-              <TeamMember name="Sophia Patel"   role="Design Director" />
+              <TeamMember name="Christopher Cialone" role="Founder & Lead Engineer" />
+              <TeamMember name="Jessica Rosario" role="Co-founder & Design Director" />
             </div>
           </div>
         </section>
