@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ArrowRight, Code, Palette, Printer, Globe, BookOpen, Menu, Beaker } from 'lucide-react'
 
-import { Button } from "/src/app/components/ui/button";
+import { Button } from "@/app/components/ui/button"
 
 
 export default function Home() {
@@ -19,6 +19,7 @@ export default function Home() {
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/blog">Blog</Link>
+              <Link href="/education/blockchain">Blockchain</Link>
             </nav>
           </div>
           <Button variant="outline" size="icon" className="md:hidden">

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ArrowRight, Code, Palette, Printer, Globe, BookOpen, Beaker } from 'lucide-react'
 
-import { Button } from "@src/app/components/ui/button"
+import { Button } from "@/app/components/ui/button"
 
 export default function ServicesPage() {
   return (
@@ -18,6 +18,7 @@ export default function ServicesPage() {
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/blog">Blog</Link>
+              <Link href="/education/blockchain">Blockchain</Link>
             </nav>
           </div>
         </div>

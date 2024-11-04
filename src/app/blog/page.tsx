@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Beaker } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/components/ui/button"
 
 export default function BlogPage() {
   return (
@@ -17,6 +17,7 @@ export default function BlogPage() {
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/blog">Blog</Link>
+              <Link href="/education/blockchain">Blockchain</Link>
             </nav>
           </div>
         </div>
@@ -56,7 +57,7 @@ export default function BlogPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p>&copy; 2023 Rosalone Labs. All rights reserved.</p>
+              <p>&copy; 2024 Rosalone Labs & Rosalone Industries. All rights reserved.</p>
             </div>
             <nav className="flex items-center space-x-4">
               <Link href="/privacy">Privacy Policy</Link>
