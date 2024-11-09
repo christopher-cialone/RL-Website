@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Beaker, ArrowRight, Bitcoin, FileCode, Globe, BookOpen } from 'lucide-react'
+import { Beaker, ArrowRight } from 'lucide-react'
 import { Button } from "@/app/components/ui/button"
 import {
   Accordion,
@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/app/components/ui/accordion"
+
 
 export default function BlockchainEducationPage() {
   return (
@@ -90,7 +91,7 @@ export default function BlockchainEducationPage() {
                     <h3 className="text-lg font-semibold">Origin Story</h3>
                     <p>
                       In 2008, an anonymous person (or group) named Satoshi Nakamoto published a revolutionary whitepaper: 
-                      "Bitcoin: A Peer-to-Peer Electronic Cash System"
+                      &quot;Bitcoin: A Peer-to-Peer Electronic Cash System&quot;
                     </p>
                     
                     <h4 className="font-semibold">Key Bitcoin Innovations:</h4>

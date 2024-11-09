@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import { Beaker } from 'lucide-react'
-import { Button } from "@/app/components/ui/button"
+// import { Button } from "@/app/components/ui/button"
+
+interface TeamMemberProps {
+  name: string;
+  role: string;
+}
+
 
 export default function AboutPage() {
   return (
@@ -82,7 +88,8 @@ export default function AboutPage() {
   )
 }
 
-function TeamMember({ name, role }) {
+
+function TeamMember({ name, role }: TeamMemberProps) {
   return (
     <div className="flex flex-col items-center space-y-2 text-center">
       <div className="w-32 h-32 rounded-full bg-gray-300"></div>
