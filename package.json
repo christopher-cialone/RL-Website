@@ -1,6 +1,7 @@
 {
   "name": "rosalone-labs-website",
   "version": "0.1.0",
+  "author": "Christopher Cialone",
   "private": true,
   "scripts": {
     "dev": "next dev",
