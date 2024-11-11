@@ -37,7 +37,7 @@ export default function AboutPage() {
                   About Rosalone Labs
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  We're a team of passionate tech experts dedicated to helping businesses thrive in the digital world.
+                  We&#39;re a team of passionate tech experts dedicated to helping businesses thrive in the digital world.
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-2xl font-bold mb-4">Our Expertise</h2>
                 <p className="text-gray-500 dark:text-gray-400">
-                  With years of experience in web development, design, and emerging technologies, our team brings a wealth of knowledge to every project. We're committed to staying at the forefront of tech trends to deliver the best solutions for our clients, from blockchain to AI and beyond.
+                  With years of experience in web development, design, and emerging technologies, our team brings a wealth of knowledge to every project. We&#39;re committed to staying at the forefront of tech trends to deliver the best solutions for our clients, from blockchain to AI and beyond.
                 </p>
               </div>
             </div>

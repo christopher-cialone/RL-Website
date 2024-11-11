@@ -1,14 +1,13 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { Beaker, ArrowRight } from 'lucide-react'
-import { Button } from "@/app/components/ui/button"
+import Link from "next/link";
+import Image from "next/image";
+import { Beaker, ArrowRight } from "lucide-react";
+import { Button } from "@/app/components/ui/button";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/app/components/ui/accordion"
-
+} from "@/app/components/ui/accordion";
 
 export default function BlockchainEducationPage() {
   return (
@@ -18,7 +17,9 @@ export default function BlockchainEducationPage() {
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <Beaker className="h-6 w-6" />
-              <span className="hidden font-bold sm:inline-block">Rosalone Labs</span>
+              <span className="hidden font-bold sm:inline-block">
+                Rosalone Labs
+              </span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link href="/services">Services</Link>
@@ -34,16 +35,24 @@ export default function BlockchainEducationPage() {
         <div className="container px-4 py-6 md:py-12 max-w-5xl">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">The Ultimate Guide to Blockchain, Bitcoin, and Web3</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+                The Ultimate Guide to Blockchain, Bitcoin, and Web3
+              </h1>
               <p className="text-xl text-muted-foreground">
-                A comprehensive journey from blockchain basics to cutting-edge decentralized technologies.
+                A comprehensive journey from blockchain basics to cutting-edge
+                decentralized technologies.
               </p>
             </div>
 
             <section className="space-y-4">
-              <h2 className="text-2xl font-bold tracking-tight">Introduction: Reimagining Digital Trust and Ownership</h2>
+              <h2 className="text-2xl font-bold tracking-tight">
+                Introduction: Reimagining Digital Trust and Ownership
+              </h2>
               <p className="text-muted-foreground">
-                In a world increasingly dominated by centralized digital platforms, blockchain technology emerges as a revolutionary approach to how we think about trust, ownership, and digital interactions.
+                In a world increasingly dominated by centralized digital
+                platforms, blockchain technology emerges as a revolutionary
+                approach to how we think about trust, ownership, and digital
+                interactions.
               </p>
             </section>
 
@@ -54,16 +63,20 @@ export default function BlockchainEducationPage() {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4">
                   <div className="space-y-4">
-                    <h3 className="text-lg font-semibold">The Fundamental Concept</h3>
+                    <h3 className="text-lg font-semibold">
+                      The Fundamental Concept
+                    </h3>
                     <p>Imagine a digital ledger that is:</p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>Completely transparent</li>
                       <li>Impossible to alter retroactively</li>
-                      <li>Distributed across thousands of computers worldwide</li>
+                      <li>
+                        Distributed across thousands of computers worldwide
+                      </li>
                       <li>Secured by advanced cryptography</li>
                     </ul>
-                    
-                    <Image 
+
+                    <Image
                       src="/placeholder.svg"
                       alt="Blockchain Concept Diagram"
                       width={800}
@@ -73,10 +86,22 @@ export default function BlockchainEducationPage() {
 
                     <h4 className="font-semibold">Key Characteristics:</h4>
                     <ul className="list-disc pl-6 space-y-2">
-                      <li><strong>Decentralization:</strong> No single point of control</li>
-                      <li><strong>Transparency:</strong> All transactions are visible to network participants</li>
-                      <li><strong>Immutability:</strong> Once data is recorded, it cannot be changed</li>
-                      <li><strong>Security:</strong> Cryptographically secured transactions</li>
+                      <li>
+                        <strong>Decentralization:</strong> No single point of
+                        control
+                      </li>
+                      <li>
+                        <strong>Transparency:</strong> All transactions are
+                        visible to network participants
+                      </li>
+                      <li>
+                        <strong>Immutability:</strong> Once data is recorded, it
+                        cannot be changed
+                      </li>
+                      <li>
+                        <strong>Security:</strong> Cryptographically secured
+                        transactions
+                      </li>
                     </ul>
                   </div>
                 </AccordionContent>
@@ -90,15 +115,22 @@ export default function BlockchainEducationPage() {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold">Origin Story</h3>
                     <p>
-                      In 2008, an anonymous person (or group) named Satoshi Nakamoto published a revolutionary whitepaper: 
+                      In 2008, an anonymous person (or group) named Satoshi
+                      Nakamoto published a revolutionary whitepaper:
                       &quot;Bitcoin: A Peer-to-Peer Electronic Cash System&quot;
                     </p>
-                    
+
                     <h4 className="font-semibold">Key Bitcoin Innovations:</h4>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>First decentralized cryptocurrency</li>
-                      <li>Solved the "double-spending" problem without a central authority</li>
-                      <li>Created a scarce digital asset with a fixed supply (21 million coins)</li>
+                      <li>
+                        Solved the &#34;double-spending&#34; problem without a
+                        central authority
+                      </li>
+                      <li>
+                        Created a scarce digital asset with a fixed supply (21
+                        million coins)
+                      </li>
                     </ul>
                   </div>
                 </AccordionContent>
@@ -110,16 +142,24 @@ export default function BlockchainEducationPage() {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4">
                   <div className="space-y-4">
-                    <h3 className="text-lg font-semibold">Ethereum and Smart Contracts</h3>
+                    <h3 className="text-lg font-semibold">
+                      Ethereum and Smart Contracts
+                    </h3>
                     <p>
-                      While Bitcoin introduced decentralized money, Ethereum revolutionized blockchain by introducing 
-                      programmable contracts.
+                      While Bitcoin introduced decentralized money, Ethereum
+                      revolutionized blockchain by introducing programmable
+                      contracts.
                     </p>
-                    
+
                     <h4 className="font-semibold">What are Smart Contracts?</h4>
                     <ul className="list-disc pl-6 space-y-2">
-                      <li>Self-executing contracts with terms directly written into code</li>
-                      <li>Automatically enforce agreements without intermediaries</li>
+                      <li>
+                        Self-executing contracts with terms directly written
+                        into code
+                      </li>
+                      <li>
+                        Automatically enforce agreements without intermediaries
+                      </li>
                       <li>Run on the Ethereum blockchain</li>
                     </ul>
                   </div>
@@ -134,9 +174,17 @@ export default function BlockchainEducationPage() {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold">From Web1 to Web3</h3>
                     <ul className="list-disc pl-6 space-y-2">
-                      <li><strong>Web1:</strong> Read-only, static websites</li>
-                      <li><strong>Web2:</strong> Interactive platforms (social media, cloud services)</li>
-                      <li><strong>Web3:</strong> Decentralized, user-owned digital ecosystems</li>
+                      <li>
+                        <strong>Web1:</strong> Read-only, static websites
+                      </li>
+                      <li>
+                        <strong>Web2:</strong> Interactive platforms (social
+                        media, cloud services)
+                      </li>
+                      <li>
+                        <strong>Web3:</strong> Decentralized, user-owned digital
+                        ecosystems
+                      </li>
                     </ul>
                   </div>
                 </AccordionContent>
@@ -148,8 +196,13 @@ export default function BlockchainEducationPage() {
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4">
                   <div className="space-y-4">
-                    <h3 className="text-lg font-semibold">Reimagining Financial Services</h3>
-                    <p>DeFi platforms offer traditional financial services without banks:</p>
+                    <h3 className="text-lg font-semibold">
+                      Reimagining Financial Services
+                    </h3>
+                    <p>
+                      DeFi platforms offer traditional financial services
+                      without banks:
+                    </p>
                     <ul className="list-disc pl-6 space-y-2">
                       <li>Lending</li>
                       <li>Borrowing</li>
@@ -163,29 +216,41 @@ export default function BlockchainEducationPage() {
             </Accordion>
 
             <section className="space-y-4">
-              <h2 className="text-2xl font-bold tracking-tight">Glossary of Key Terms</h2>
+              <h2 className="text-2xl font-bold tracking-tight">
+                Glossary of Key Terms
+              </h2>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="p-4 rounded-lg border">
                   <h3 className="font-semibold">Blockchain</h3>
-                  <p className="text-sm text-muted-foreground">Distributed, immutable digital ledger</p>
+                  <p className="text-sm text-muted-foreground">
+                    Distributed, immutable digital ledger
+                  </p>
                 </div>
                 <div className="p-4 rounded-lg border">
                   <h3 className="font-semibold">Cryptocurrency</h3>
-                  <p className="text-sm text-muted-foreground">Digital or virtual currency using blockchain</p>
+                  <p className="text-sm text-muted-foreground">
+                    Digital or virtual currency using blockchain
+                  </p>
                 </div>
                 <div className="p-4 rounded-lg border">
                   <h3 className="font-semibold">Smart Contract</h3>
-                  <p className="text-sm text-muted-foreground">Self-executing contract with coded terms</p>
+                  <p className="text-sm text-muted-foreground">
+                    Self-executing contract with coded terms
+                  </p>
                 </div>
                 <div className="p-4 rounded-lg border">
                   <h3 className="font-semibold">DApp</h3>
-                  <p className="text-sm text-muted-foreground">Decentralized Application running on a blockchain</p>
+                  <p className="text-sm text-muted-foreground">
+                    Decentralized Application running on a blockchain
+                  </p>
                 </div>
               </div>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-2xl font-bold tracking-tight">Ready to Learn More?</h2>
+              <h2 className="text-2xl font-bold tracking-tight">
+                Ready to Learn More?
+              </h2>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild>
                   <Link href="/contact">
@@ -208,7 +273,10 @@ export default function BlockchainEducationPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p>&copy; 2024 Rosalone Labs & Rosalone Industries. All rights reserved.</p>
+              <p>
+                &copy; 2024 Rosalone Labs & Rosalone Industries. All rights
+                reserved.
+              </p>
             </div>
             <nav className="flex items-center space-x-4">
               <Link href="/privacy">Privacy Policy</Link>
@@ -218,5 +286,5 @@ export default function BlockchainEducationPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

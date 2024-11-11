@@ -1,7 +1,21 @@
-import Link from 'next/link'
-import { ArrowRight, Code, Palette, Printer, Globe, BookOpen, Beaker } from 'lucide-react'
+import Link from "next/link";
+import {
+  ArrowRight,
+  Code,
+  Palette,
+  Printer,
+  Globe,
+  BookOpen,
+  Beaker,
+} from "lucide-react";
 
-import { Button } from "@/app/components/ui/button"
+import { Button } from "@/app/components/ui/button";
+
+interface ServiceCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
 
 export default function ServicesPage() {
   return (
@@ -11,7 +25,9 @@ export default function ServicesPage() {
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <Beaker className="h-6 w-6" />
-              <span className="hidden font-bold sm:inline-block">Rosalone Labs</span>
+              <span className="hidden font-bold sm:inline-block">
+                Rosalone Labs
+              </span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link href="/services">Services</Link>
@@ -26,7 +42,9 @@ export default function ServicesPage() {
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8">Our Services</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8">
+              Our Services
+            </h1>
             <div className="grid gap-10 sm:grid-cols-2 md:gap-16">
               <ServiceCard
                 icon={<Code className="h-12 w-12" />}
@@ -66,7 +84,10 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p>&copy; 2024 Rosalone Labs & Rosalone Industries. All rights reserved.</p>
+              <p>
+                &copy; 2024 Rosalone Labs & Rosalone Industries. All rights
+                reserved.
+              </p>
             </div>
             <nav className="flex items-center space-x-4">
               <Link href="/privacy">Privacy Policy</Link>
@@ -76,10 +97,10 @@ export default function ServicesPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
     <div className="flex flex-col items-start space-y-3">
       <div className="bg-primary/10 p-3 rounded-md">{icon}</div>
@@ -91,5 +112,5 @@ function ServiceCard({ icon, title, description }) {
         </Link>
       </Button>
     </div>
-  )
+  );
 }

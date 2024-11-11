@@ -1,6 +1,12 @@
-import Link from 'next/link'
-import { Beaker } from 'lucide-react'
-import { Button } from "@/app/components/ui/button"
+import Link from "next/link";
+import { Beaker } from "lucide-react";
+import { Button } from "@/app/components/ui/button";
+
+interface BlogPostProps {
+  title: string;
+  excerpt: string;
+  date: string;
+}
 
 export default function BlogPage() {
   return (
@@ -10,7 +16,9 @@ export default function BlogPage() {
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <Beaker className="h-6 w-6" />
-              <span className="hidden font-bold sm:inline-block">Rosalone Labs</span>
+              <span className="hidden font-bold sm:inline-block">
+                Rosalone Labs
+              </span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link href="/services">Services</Link>
@@ -57,7 +65,10 @@ export default function BlogPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p>&copy; 2024 Rosalone Labs & Rosalone Industries. All rights reserved.</p>
+              <p>
+                &copy; 2024 Rosalone Labs & Rosalone Industries. All rights
+                reserved.
+              </p>
             </div>
             <nav className="flex items-center space-x-4">
               <Link href="/privacy">Privacy Policy</Link>
@@ -67,10 +78,10 @@ export default function BlogPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-function BlogPost({ title, excerpt, date }) {
+function BlogPost({ title, excerpt, date }: BlogPostProps) {
   return (
     <div className="space-y-2">
       <h2 className="text-2xl font-bold">{title}</h2>
@@ -80,5 +91,5 @@ function BlogPost({ title, excerpt, date }) {
         Read more
       </Button>
     </div>
-  )
+  );
 }

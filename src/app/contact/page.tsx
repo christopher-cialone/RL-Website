@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import { Beaker } from 'lucide-react'
-import { Button } from "@/app/components/ui/button"
-import { Input } from "@/app/components/ui/input"
-import { Textarea } from "@/app/components/ui/textarea"
+import Link from "next/link";
+import { Beaker } from "lucide-react";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
+import { Textarea } from "@/app/components/ui/textarea";
 
 export default function ContactPage() {
   return (
@@ -12,7 +12,9 @@ export default function ContactPage() {
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <Beaker className="h-6 w-6" />
-              <span className="hidden font-bold sm:inline-block">Rosalone Labs</span>
+              <span className="hidden font-bold sm:inline-block">
+                Rosalone Labs
+              </span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link href="/services">Services</Link>
@@ -33,25 +35,43 @@ export default function ContactPage() {
                   Contact Rosalone Labs
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Have a question or want to work together? We'd love to hear from you.
+                  Have a question or want to work together? We&#39;d love to
+                  hear from you.
                 </p>
               </div>
             </div>
             <div className="mx-auto max-w-[500px] mt-12">
               <form className="space-y-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Name
+                  </label>
                   <Input id="name" placeholder="Your name" />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Email
+                  </label>
                   <Input id="email" type="email" placeholder="Your email" />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Message
+                  </label>
                   <Textarea id="message" placeholder="Your message" />
                 </div>
-                <Button type="submit" className="w-full">Send Message</Button>
+                <Button type="submit" className="w-full">
+                  Send Message
+                </Button>
               </form>
             </div>
           </div>
@@ -61,7 +81,10 @@ export default function ContactPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p>&copy; 2024 Rosalone Labs & Rosalone Industries. All rights reserved.</p>
+              <p>
+                &copy; 2024 Rosalone Labs & Rosalone Industries. All rights
+                reserved.
+              </p>
             </div>
             <nav className="flex items-center space-x-4">
               <Link href="/privacy">Privacy Policy</Link>
@@ -71,5 +94,5 @@ export default function ContactPage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

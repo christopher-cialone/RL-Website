@@ -1,8 +1,22 @@
-import Link from 'next/link'
-import { ArrowRight, Code, Palette, Printer, Globe, BookOpen, Menu, Beaker } from 'lucide-react'
+import Link from "next/link";
+import {
+  ArrowRight,
+  Code,
+  Palette,
+  Printer,
+  Globe,
+  BookOpen,
+  Menu,
+  Beaker,
+} from "lucide-react";
 
-import { Button } from "@/app/components/ui/button"
+import { Button } from "@/app/components/ui/button";
 
+interface ServiceCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
 
 export default function Home() {
   return (
@@ -12,7 +26,9 @@ export default function Home() {
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <Beaker className="h-6 w-6" />
-              <span className="hidden font-bold sm:inline-block">Rosalone Labs</span>
+              <span className="hidden font-bold sm:inline-block">
+                Rosalone Labs
+              </span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link href="/services">Services</Link>
@@ -37,7 +53,8 @@ export default function Home() {
                   Innovate with Rosalone Labs
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  We provide cutting-edge technical solutions from web development to decentralized technologies education.
+                  We provide cutting-edge technical solutions from web
+                  development to decentralized technologies education.
                 </p>
               </div>
               <div className="space-x-4">
@@ -53,7 +70,9 @@ export default function Home() {
         </section>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">Our Services</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
+              Our Services
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <ServiceCard
                 icon={<Code className="h-10 w-10" />}
@@ -93,7 +112,10 @@ export default function Home() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
-              <p>&copy; 2024 Rosalone Labs & Rosalone Industries. All rights reserved.</p>
+              <p>
+                &copy; 2024 Rosalone Labs & Rosalone Industries. All rights
+                reserved.
+              </p>
             </div>
             <nav className="flex items-center space-x-4">
               <Link href="/privacy">Privacy Policy</Link>
@@ -103,21 +125,21 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
-function ServiceCard({ icon, title, description }) {
+function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
     <div className="flex flex-col items-center text-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
       <div className="mb-4">{icon}</div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-500 dark:text-gray-400 mb-4">{description}</p>
       <Button variant="outline" size="sm" asChild>
-        <Link href={`/services#${title.toLowerCase().replace(/\s+/g, '-')}`}>
+        <Link href={`/services#${title.toLowerCase().replace(/\s+/g, "-")}`}>
           Learn More
           <ArrowRight className="ml-2 h-4 w-4" />
         </Link>
       </Button>
     </div>
-  )
+  );
 }
