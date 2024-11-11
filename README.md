@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Rosalone Labs Website
+
+### We are tech consultants offering web development, graphic design, full vinyl prints, signage & apparel -- in addition to advising our partners on proper tech stacks & solutions for their businesses.
+
 ## Getting Started
 
 First, run the development server:
